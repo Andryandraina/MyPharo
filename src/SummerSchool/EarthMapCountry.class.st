@@ -49,6 +49,12 @@ EarthMapCountry >> name: anObject [
 	name := anObject
 ]
 
+{ #category : 'printing' }
+EarthMapCountry >> printOn: aStream [
+super printOn: aStream.
+aStream nextPutAll: ' ', name
+]
+
 { #category : 'accessing' }
 EarthMapCountry >> svgPath [
 
